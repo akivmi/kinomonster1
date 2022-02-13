@@ -1,84 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Киномонстр Bootstrap</title>
+<?php
+    //Подключение шапки
+    require_once("header.php");
+?>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Main Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    
-
-    <div class="container-fluid">
-      <div class="row">
-       
-       <nav role="navigation" class="navbar navbar-inverse">
-          <div class="container">
-
-          <div class="navbar-header header">
-
-            <div class="container">
-              
-              <div class="row">
-                
-                <div class="col-lg-12">
-                  <h1><a href="index.html">КиноМонстр</a></h1> 
-                  <p>Кино - наша страсть!</p>
-                </div>
-
-              </div>
-
-            </div>
-
-       
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-              
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-
-            </button>
-          
-
-          </div>
-            
-            <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
-              
-              <ul class="nav nav-pills">
-                <li><a href="index.html">Главная</a> </li>
-                <li> <a href="films.html">Фильмы</a> </li>
-                <li> <a href="serials.html">Сериалы</a> </li>
-                <li class="active"> <a href="raiting.html">Рейтинг фильмов</a> </li>
-                <li> <a href="contact.html">Контакты</a> </li>
-
-              </ul>
-
-
-            </div>
-
-          </div>
-       </nav> 
-
-      </div>
-    </div>
-
-
-    <div class="wrapper">
+<div class="wrapper">
 
       <div class="container">
 
@@ -103,63 +28,63 @@
                 
                 <tr>
                     <th></th>
-                    <th>Фильмы</th>
+                    <th>Фильмы и сериалы</th>
                     <th class="center">Год</th>
                     <th class="center">Рейтинг</th>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/dune.png"></td>
-                    <td>1. <a href="show.html">Дюна</a></td>
+                    <td>1. <a href="show.php">Дюна</a></td>
                     <td class="center">2021</td>
                     <td class="center rating">7.9</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/kruella.png"></td>
-                    <td>2. <a href="show2.html">Круэлла</a></td>
+                    <td>2. <a href="show2.php">Круэлла</a></td>
                     <td class="center">2021</td>
                     <td class="center rating">7.4</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/privatecheerin.png"></td>
-                    <td>3. <a href="show3.html">Рядовой Чээрин</a></td>
+                    <td>3. <a href="show3.php">Рядовой Чээрин</a></td>
                     <td class="center">2021</td>
                     <td class="center rating">7.3</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/wrathofman.png"></td>
-                    <td>4. <a href="show4.html">Гнев человеческий</a></td>
+                    <td>4. <a href="show4.php">Гнев человеческий</a></td>
                     <td class="center">2021</td>
                     <td class="center rating">7.7</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/squidgame.png"></td>
-                    <td>5. <a href="show5.html">Игра в кальмара</a></td>
+                    <td>5. <a href="show5.php">Игра в кальмара</a></td>
                     <td class="center">2021</td>
                     <td class="center rating">7.6</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/elite.png"></td>
-                    <td>6. <a href="show6.html">Элита</a></td>
+                    <td>6. <a href="show6.php">Элита</a></td>
                     <td class="center">2018-2021</td>
                     <td class="center rating">7.7</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/cateringunit.png"></td>
-                    <td>7. <a href="show7.html">Пищеблок</a></td>
+                    <td>7. <a href="show7.php">Пищеблок</a></td>
                     <td class="center">2021</td>
                     <td class="center rating">7.4</td>
                 </tr>
 
                 <tr>
                     <td class="center"> <img src="assets/img/lacasadepapel.png"></td>
-                    <td>8. <a href="show8.html">Бумажный дом</a></td>
+                    <td>8. <a href="show8.php">Бумажный дом</a></td>
                     <td class="center">2017-2021</td>
                     <td class="center rating">8.0</td>
                 </tr>
@@ -189,20 +114,7 @@
             </div>
           </div>
 
-          <div class="panel panel-info">
-            <div class="panel-heading"><div class="sidebar-header">Вход</div></div>
-            <div class="panel-body">
-              <form role="form">
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="Логин">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" placeholder="Пароль">
-                </div>
-                <button type="submit" class="btn btn-warning pull-right">вход</button>
-              </form>
-            </div>
-          </div>
+          
 
           <div class="panel panel-info">
             <div class="panel-heading"><div class="sidebar-header">Новости</div></div>
@@ -219,22 +131,22 @@
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.9</span>
-                  <a href="show.html">Дюна</a>
+                  <a href="show.php">Дюна</a>
                 </li>
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.4</span>
-                  <a href="show2.html">Круэлла</a>
+                  <a href="show2.php">Круэлла</a>
                 </li>
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.3</span>
-                  <a href="show3.html">Рядовой Чээрин</a>
+                  <a href="show3.php">Рядовой Чээрин</a>
                 </li>
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.7</span>
-                  <a href="show4.html">Гнев человеческий</a>
+                  <a href="show4.php">Гнев человеческий</a>
                 </li>
 
               </ul>
@@ -255,18 +167,7 @@
 
     </div>
 
-
-    <footer>
-
-      <div class="container">
-        <p class="text-center"> <a href="#">WH-DB.COM</a> </p>
-      </div>
-
-    </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
-</html>
+<?php
+    //Подключение шапки
+    require_once("footer.php");
+?>

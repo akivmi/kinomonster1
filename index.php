@@ -1,84 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Киномонстр</title>
+<?php
+    //Подключение шапки
+    require_once("header.php");
+?>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Main Style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    
-
-    <div class="container-fluid">
-      <div class="row">
-       
-       <nav role="navigation" class="navbar navbar-inverse">
-          <div class="container">
-
-          <div class="navbar-header header">
-
-            <div class="container">
-              
-              <div class="row">
-                
-                <div class="col-lg-12">
-                  <h1><a href="index.html">КиноМонстр</a></h1> 
-                  <p>Кино - наша страсть!</p>
-                </div>
-
-              </div>
-
-            </div>
-
-       
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-              
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-
-            </button>
-          
-
-          </div>
-            
-            <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
-              
-              <ul class="nav nav-pills">
-                <li class="active"><a href="index.html">Главная</a> </li>
-                <li> <a href="films.html">Фильмы</a> </li>
-                <li> <a href="serials.html">Сериалы</a> </li>
-                <li> <a href="raiting.html">Рейтинг фильмов</a> </li>
-                <li> <a href="contact.html">Контакты</a> </li>
-
-              </ul>
-
-
-            </div>
-
-          </div>
-       </nav> 
-
-      </div>
-    </div>
-
-
-    <div class="wrapper">
+<div class="wrapper">
 
       <div class="container">
 
@@ -155,7 +80,7 @@
 
           <div class="margin-8"></div>
 
-          <a href="read2.html"> <h3>Премьера фильма</h3></a>
+          <a href="#"> <h3>Премьера фильма</h3></a>
           <hr>
           <p>
             Мировая премьера «Дюны» состоялась 3 сентября 2021 года во время 78-го Венецианского 
@@ -169,14 +94,14 @@
 
           <div class="margin-8"></div>
 
-          <a href="read1.html"> <h3>Где и как снимали фильм Дюна</h3></a>
+          <a href="read1.php"> <h3>Где и как снимали фильм Дюна</h3></a>
           <hr>
           <p>
             Основная часть съёмок началась 18 марта 2019 года на киностудии Origo в Будапеште.
             Производство также проходило в иорданской пустыне Вади-Рам. Норвежский полуостров
             Стад послужил местом натурных съёмок для планеты Каладан.
           </p>
-          <a href="read1.html" class="btn btn-warning pull-right">Читать</a>
+          <a href="read1.php" class="btn btn-warning pull-right">Читать</a>
 
           <div class="margin-8 clear"></div>
 
@@ -201,21 +126,7 @@
             </div>
           </div>
 
-          <div class="panel panel-info">
-            <div class="panel-heading"><div class="sidebar-header">Вход</div></div>
-            <div class="panel-body">
-              <form role="form">
-                <div class="form-group">
-                  <input type="text" class="form-control input-lg" placeholder="Логин">
-                </div>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" placeholder="Пароль">
-                </div>
-                <button type="submit" class="btn btn-warning pull-left">регистрация</button>
-                <button type="submit" class="btn btn-warning pull-right">вход</button>
-              </form>
-            </div>
-          </div>
+          
 
           <div class="panel panel-info">
             <div class="panel-heading"><div class="sidebar-header">Новости</div></div>
@@ -232,22 +143,22 @@
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.9</span>
-                  <a href="show.html">Дюна</a>
+                  <a href="show.php">Дюна</a>
                 </li>
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.4</span>
-                  <a href="show2.html">Круэлла</a>
+                  <a href="show2.php">Круэлла</a>
                 </li>
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.3</span>
-                  <a href="show3.html">Рядовой Чээрин</a>
+                  <a href="show3.php">Рядовой Чээрин</a>
                 </li>
 
                 <li class="list-group-item list-group-warning">
                   <span class="badge">7.7</span>
-                  <a href="show4.html">Гнев человеческий</a>
+                  <a href="show4.php">Гнев человеческий</a>
                 </li>
 
               </ul>
@@ -268,18 +179,7 @@
 
     </div>
 
-
-    <footer>
-
-      <div class="container">
-        <p class="text-center"> <a href="#">WH-DB.COM</a> </p>
-      </div>
-
-    </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
-</html>
+<?php
+    //Подключение шапки
+    require_once("footer.php");
+?>
